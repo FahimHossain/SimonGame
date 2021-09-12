@@ -68,5 +68,13 @@ function nextSequence() {
           },200);
 
           $("#level-title").html("Game Over!! <br> Press Any Key to Restart")
+
+          startOver();
       }
+  }
+
+  function startOver() {
+    level = 0;
+    gamePattern = [];
+    started = false;
   }
